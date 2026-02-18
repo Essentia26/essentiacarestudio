@@ -9,6 +9,7 @@
 }
 
 *{ box-sizing: border-box; }
+
 html, body{
   margin:0; padding:0;
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -68,6 +69,7 @@ html, body{
 }
 
 .btn:hover{ transform: translateY(-1px); border-color: rgba(255,255,255,.22); }
+
 .primary{ background: rgba(0,255,200,.18); }
 .secondary{ background: var(--panel); }
 
@@ -120,5 +122,6 @@ h2{ margin: 0 0 10px; font-size: 22px; }
 @media (max-width: 860px){
   .grid{ grid-template-columns: 1fr; }
   .split{ grid-template-columns: 1fr; }
-  .btn{ width: 100%; }
+  .btn{ width: 100%; min-width: unset; }
 }
+
